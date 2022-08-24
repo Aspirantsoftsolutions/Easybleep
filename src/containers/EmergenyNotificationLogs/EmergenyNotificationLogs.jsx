@@ -58,6 +58,11 @@ const EmergenyNotificationLogs = (props) => {
       key: "accepted",
     },
     {
+      title: "No of Attented",
+      dataIndex: "attented",
+      key: "attented",
+    },
+    {
       title: "No of Rejected",
       dataIndex: "rejected",
       key: "rejected",
@@ -83,6 +88,7 @@ const EmergenyNotificationLogs = (props) => {
       location: "AH",
       logins: 0,
       accepted: 0,
+      attented: 0,
       rejected: 0,
     },
     {
@@ -96,6 +102,7 @@ const EmergenyNotificationLogs = (props) => {
       location: "AH",
       logins: 0,
       accepted: 0,
+      attented: 0,
       rejected: 0,
     },
     {
@@ -109,6 +116,7 @@ const EmergenyNotificationLogs = (props) => {
       location: "AH",
       logins: 0,
       accepted: 0,
+      attented: 0,
       rejected: 0,
     },
     {
@@ -122,6 +130,7 @@ const EmergenyNotificationLogs = (props) => {
       location: "AH",
       logins: 0,
       accepted: 0,
+      attented: 0,
       rejected: 0,
     },
     {
@@ -135,6 +144,7 @@ const EmergenyNotificationLogs = (props) => {
       location: "AH",
       logins: 0,
       accepted: 0,
+      attented: 0,
       rejected: 0,
     },
   ]);
@@ -241,13 +251,13 @@ const EmergenyNotificationLogs = (props) => {
 
               <div className="frow">
 
-              <div className="colblck">
+                <div className="colblck">
                   <div className="nothead">Message Content</div>
 
 
                   No Data Available
                 </div>
-                
+
                 <div className="colblck">
                   <div className="nothead">Not Attended</div>
 

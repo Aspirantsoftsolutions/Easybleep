@@ -54,11 +54,11 @@ const UserManagement = (props) => {
     //   dataIndex: "type",
     //   key: "type",
     // },
-    {
-      title: "Registration key",
-      dataIndex: "registrationkey",
-      key: "registrationkey",
-    },
+    // {
+    //   title: "Registration key",
+    //   dataIndex: "registrationkey",
+    //   key: "registrationkey",
+    // },
     {
       className: "lastaction",
       title: "Action",

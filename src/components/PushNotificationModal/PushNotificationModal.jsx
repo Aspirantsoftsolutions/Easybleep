@@ -1,4 +1,4 @@
-import { Button, Modal, Input, Select } from "antd";
+import { Button, Modal, Input, Select, Col } from "antd";
 import React, { forwardRef, useImperativeHandle, useState } from "react";
 import "./PushNotificationModal.scss";
 import pushnotification from "../../assets/img/icons/addnotification-icon.png";
@@ -52,13 +52,16 @@ const PushNotificationModal = forwardRef((props, ref) => {
           </Button>,
         ]}
       >
-        <TextArea></TextArea>
+        <TextArea placeholder="Message"></TextArea>
         <br />
         <br />
+        <Col span={8} className="spcol">
+          Select Users
+        </Col>
         <Select
-          width={475}
+          style={{ width: '100%' }}
           mode="multiple"
-          placeholder="select"
+          placeholder="Select Users"
           defaultValue={[
             "Mustak",
             "Ahmed",

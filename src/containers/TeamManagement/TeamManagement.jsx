@@ -79,7 +79,7 @@ const TeamManagement = (props) => {
     {
       teamname: "Code yellow team",
       station: "Switchboardd",
-      location: "AH",
+      location: "HGH",
       description: "yello",
       teamringtone: "Siren noise",
       people: 0,

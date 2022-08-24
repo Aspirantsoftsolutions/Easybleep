@@ -62,23 +62,23 @@ const BleepsManagementModal = forwardRef((props, ref) => {
           <Col span={16} className="spcol">
             <Select>
               <Option value="">Select</Option>
-              <Option value="118">Switchboard</Option>
+              <Option value="118">HGH</Option>
             </Select>
           </Col>
 
 
           <Col span={24} className="spcol">
-          <Input placeholder="Device name" />
+            <Input placeholder="Device name" />
           </Col>
 
           <Col span={24} className="spcol">
-          <Input placeholder="Insert device serial number" />
+            <Input placeholder="Insert device serial number" />
           </Col>
 
           <Col span={24} className="spcol">
-          <Input placeholder="Enter device model" />
+            <Input placeholder="Enter device model" />
           </Col>
-       
+
 
           <Col span={8} className="spcol">
             OS type
@@ -86,18 +86,18 @@ const BleepsManagementModal = forwardRef((props, ref) => {
           <Col span={16} className="spcol">
             <Select>
               <Option value="">Select</Option>
-              <Option value="118">Switchboard</Option>
+              <Option value="118">Android</Option>
             </Select>
           </Col>
 
 
           <Col span={8} className="spcol">
-           Bleep#
+            Bleep#
           </Col>
           <Col span={16} className="spcol">
             <Select>
               <Option value="">Select</Option>
-              <Option value="118">Switchboard</Option>
+              <Option value="118">565656</Option>
             </Select>
           </Col>
 
@@ -107,12 +107,12 @@ const BleepsManagementModal = forwardRef((props, ref) => {
             Select active device
           </Col>
           <Col span={16} className="spcol">
-          <DatePicker />
+            <DatePicker />
           </Col>
 
         </Row>
 
-       
+
       </Modal>
     </>
   );
