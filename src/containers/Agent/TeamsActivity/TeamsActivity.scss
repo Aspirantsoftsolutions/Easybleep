@@ -1,0 +1,191 @@
+.useractivity-components-wrapper {
+  h3 {
+    text-align: left;
+    font-weight: 800;
+  }
+
+  .addmore{
+    background: var(--darkred);
+    color: var(--whitetext);
+    border-radius: 5px;
+    border: none;
+  }
+  .userheadbk {
+    text-align: left;
+    margin: 0 0 15px 0;
+
+    .ant-select {
+      margin: 0 15px 0 0;
+      border-radius: 5px;
+    }
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+      border-radius: 5px;
+    }
+   
+    .ant-picker{
+      border-radius: 5px;
+    }
+  }
+
+ 
+
+  .ant-table-tbody {
+    .ant-table table {
+      width: 100%;
+      text-align: left;
+      border-radius: 2px 2px 0 0;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: #f0f2f5;
+    }
+    tr {
+      td {
+        border-bottom: 4px solid var(--bggreycolor);
+
+        .iconbutton {
+          border: none;
+          background: none;
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
+        .actionicon {
+          width: 110px;
+          img {
+            height: 18px;
+            margin-left: 10px;
+          }
+        }
+      }
+      td:nth-child(1) {
+        border-bottom-left-radius: 10px;
+      }
+      td:last-child {
+        border-bottom-right-radius: 10px;
+      }
+    }
+    tr:nth-child(even) {
+      background-color: var(--lightred);
+      box-shadow: 0 1px 3px #ccc;
+      position: relative;
+      border-radius: 10px;
+      z-index: 5;
+      top: 1px;
+    }
+    tr:nth-child(odd) {
+      background-color: var(--whitetext);
+      box-shadow: 0 1px 3px #ccc;
+      position: relative;
+      border-radius: 10px;
+      z-index: 4;
+      top: 1px;
+    }
+  }
+  .ant-table-content {
+    background: #f0f2f5;
+  }
+
+  .ant-table-container table > thead > tr:first-child th:first-child {
+    border-bottom-left-radius: 10px;
+  }
+  .ant-table-container table > thead > tr:first-child th:last-child {
+    border-bottom-right-radius: 10px;
+  }
+
+  .ant-table-thead > tr > th {
+    border-bottom: 4px solid var(--bggreycolor);
+    background: var(--tableheader);
+    font-weight: 800;
+
+    th:nth-child(1) {
+      border-bottom-left-radius: 10px;
+    }
+    th:last-child {
+      border-bottom-right-radius: 10px;
+    }
+
+
+
+
+
+  }
+  @media (max-width: 650px) {
+    .userheadbk {
+      .ant-select {
+        margin: 0 0 10px;
+        width: 100%;
+      }
+
+      .ant-picker-range {
+        position: relative;
+        display: inline-flex;
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+.usermodel{
+
+  .ant-modal-header{
+    background: var(--darkred);
+    .ant-modal-title{
+      color: var(--whitetext);
+      font-weight: 800;
+      text-align: center;
+    }
+  } 
+  
+  table{
+    width: 100%;
+    text-align: left;
+  }
+  .ant-modal-close {      
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 40px;     
+      position: absolute;
+  
+    .ant-modal-close-x {   
+      background: var(--darkred);    
+      border-radius: 100px 100px 0 0;
+      top: -45px;
+      position: relative;
+      color: var(--whitetext);
+      .anticon{
+        border: 2px solid var(--whitetext);
+        padding: 5px;
+        border-radius: 100px;
+        font-weight: 800;  
+      }
+    }
+  }
+ 
+
+  .ant-modal-footer{
+    padding: 0;
+    display: flex;
+    .ant-btn-primary {
+      background: var(--submitbtn);
+      border: none;
+      width: 50%;
+      border-radius: 0;
+      height: 50px;
+      font-weight: 700;
+    }
+    .ant-btn + .ant-btn:not(.ant-dropdown-trigger) {
+      color: var(--submitbtn);
+      background: var(--cancelbtn);      
+      border-radius: 0;
+      width: 50%;
+      margin: 0;
+      height: 50px;
+      font-weight: 700;
+     
+    }
+  }
+
+}

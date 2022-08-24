@@ -1,0 +1,22 @@
+.profile-components-wrapper{
+text-align: center;
+    h3{
+        font-weight: 800;
+    }
+    .editbox{
+        background: var(--whitetext);
+        padding: 15px;
+        border-radius: 8px;
+        max-width: 500px;
+        margin: 0 auto;
+
+        .ant-btn-primary{
+            background-color: var(--darkred);
+            border-radius: 100px;
+            border: none;
+            padding:6px 30px;
+        }
+    }
+
+   
+}

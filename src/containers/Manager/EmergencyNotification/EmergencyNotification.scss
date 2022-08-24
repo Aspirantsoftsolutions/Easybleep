@@ -1,0 +1,278 @@
+.emergency-wrapper {
+
+  .closebtn{
+    background: var(--darkred);
+    border: none;
+    color: var(--whitetext);
+    border-radius: 5px;
+  }
+  .ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-header-text {
+    flex: auto;
+    font-weight: 800;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-extra{
+  margin-right:23%;
+}
+
+  .ant-tabs-tab:hover {
+    color: var(--darkred);
+  }
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: var(--whitetext);
+  }
+  //***
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border: none;
+    background: var(--bggreycolor);
+  }
+  .ant-select-arrow {
+    top: 37%;
+  }
+  .ant-input {
+    border: none;
+    background: var(--bggreycolor);
+  }
+  //***
+
+  .ant-tabs-nav {
+    margin: 0 0 0 10px;
+  }
+  .ant-tabs-tab + .ant-tabs-tab {
+    margin: 0 0 0 8px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .ant-tabs-tab-active {
+    background: var(--darkred);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .ant-tabs-ink-bar {
+    background: var(--darkred);
+  }
+
+  .tabcontent {
+    min-height: 80vh;
+    background: var(--whitetext);
+    border-radius: 8px;
+    padding: 16px;
+
+    .tbleft {
+      h3 {
+        font-weight: 800;
+        text-align: left;
+      }
+
+      .tbboxflex {
+        display: flex;
+
+        .tbbox {
+          text-align: left;
+          border: 1px solid #ccc;
+          padding: 15px;
+          width: 50%;
+          position: relative;
+
+          .ant-collapse > .ant-collapse-item {
+            border-bottom: 1px solid #d9d9d9;
+            background: #fff;
+        }
+        
+          .userforms{
+            width: 100%;
+            tr            
+            {
+              
+              td{
+               
+                padding-bottom: 10px;
+                padding-top: 10px;
+                .spanwaiting {
+                  background: #999;
+                  color: #fff;
+                  border-radius: 50px;
+                  padding: 3px 10px;                 
+    
+              }
+              }
+              td:nth-child(1)
+              {
+                width: 80%;
+              }
+            }
+          }
+
+         
+
+
+          .corebox {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid var(--bggreycolor);
+            padding: 16px;
+            align-items: center;
+            position: relative;
+
+            &:hover .span{
+              background: #ccc;
+              height: 25px;
+            }
+
+            .codeno {
+              font-weight: 800;
+              font-size: 20px;
+              margin: 0;
+            }
+            .codeblk {
+              display: flex;
+              flex-direction: column;
+              margin: 0;
+            }
+            .codeavathar {
+              .notifigreen {
+                width: 10px;
+                background: var(--green);
+                height: 10px;
+                display: inline-block;
+                border-radius: 100px;
+                position: absolute;
+                right: 20px;
+                margin: 35px 0 0 0;
+              }
+             
+             
+            }
+            .opendiv{
+              background: #7a7a7ae0;
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              height: 90px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+           
+          }
+
+        
+          .ant-select {
+            width: 100%;
+            padding-bottom: 15px;
+          }
+          .ant-input {
+            width: 100%;
+            margin-bottom: 15px;
+          }
+
+          .codebtn {
+            background: var(--darkred);
+            border: none;
+            border-radius: 100px;
+          }
+        }
+      }
+    }
+  }
+
+  .ant-table-tbody {
+    .ant-table table {
+      width: 100%;
+      text-align: left;
+      border-radius: 2px 2px 0 0;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: #f0f2f5;
+    }
+    tr {
+      td {
+        border-bottom: 4px solid var(--bggreycolor);
+
+        .iconbutton {
+          border: none;
+          background: none;
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
+        .actionicon {
+          width: 110px;
+          img {
+            height: 18px;
+            margin-left: 10px;
+          }
+        }
+      }
+      td:nth-child(1) {
+        border-bottom-left-radius: 10px;
+      }
+      td:last-child {
+        border-bottom-right-radius: 10px;
+      }
+    }
+    tr:nth-child(even) {
+      background-color: var(--lightred);
+      box-shadow: 0 1px 3px #ccc;
+      position: relative;
+      border-radius: 10px;
+      z-index: 5;
+      top: 1px;
+    }
+    tr:nth-child(odd) {
+      background-color: var(--whitetext);
+      box-shadow: 0 1px 3px #ccc;
+      position: relative;
+      border-radius: 10px;
+      z-index: 4;
+      top: 1px;
+    }
+  }
+  .ant-table-content {
+    background: #f0f2f5;
+  }
+
+  .ant-table-container table > thead > tr:first-child th:first-child {
+    border-bottom-left-radius: 10px;
+  }
+  .ant-table-container table > thead > tr:first-child th:last-child {
+    border-bottom-right-radius: 10px;
+  }
+
+  .ant-table-thead > tr > th {
+    border-bottom: 4px solid var(--bggreycolor);
+    background: var(--tableheader);
+    font-weight: 800;
+
+    th:nth-child(1) {
+      border-bottom-left-radius: 10px;
+    }
+    th:last-child {
+      border-bottom-right-radius: 10px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+
+  .ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-extra{
+    margin-right: 5%!important;
+  }
+
+  .tbleft {
+    .tbboxflex {
+      display: flex;
+      flex-direction: column;
+      .tbbox {
+        width: 100%!important;
+        
+      }
+    }
+  }
+}

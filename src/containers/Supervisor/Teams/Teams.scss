@@ -1,0 +1,139 @@
+.teammange-wrapper {
+  text-align: left;
+  .tmhead {
+    margin: 0 0 15px 0;
+
+    .searchright {
+      float: right;
+      width: 200px;
+    }
+  }
+
+
+
+
+  .ant-table-tbody > tr > td {
+    border-bottom: 1px solid #f0f0f0;
+    background: red;
+
+  .ant-table-tbody {
+    .ant-table table {
+      width: 100%;
+      text-align: left;
+      border-radius: 2px 2px 0 0;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: #f0f2f5;    
+    }
+    tr {
+      
+ 
+
+      td {
+        border-bottom: 4px solid var(--bggreycolor);       
+        
+        padding: 0;
+        .iconbutton {
+          border: none;
+          background: none;
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
+        .actionicon {
+          width: 110px;
+          img {
+            height: 18px;
+            margin-left: 10px;
+          }
+        }
+
+       
+
+
+      }
+      td:nth-child(1) {
+        border-bottom-left-radius: 10px;
+      }
+      td:last-child {
+        border-bottom-right-radius: 10px;
+      }
+    }
+    tr:nth-child(even) {
+      background-color: var(--lightred);
+      box-shadow: 0 1px 3px #ccc;
+      position: relative;
+      border-radius: 10px;
+      z-index: 5;
+      top: 1px;
+    }
+    tr:nth-child(odd) {
+      background-color: var(--whitetext);
+      box-shadow: 0 1px 3px #ccc;
+      position: relative;
+      border-radius: 10px;
+      z-index: 4;
+      top: 1px;
+    }
+  }
+  .ant-table-content {
+    background: #f0f2f5;
+
+      
+  }
+
+  .ant-table-container table > thead > tr:first-child th:first-child {
+    border-bottom-left-radius: 10px;
+  }
+  .ant-table-container table > thead > tr:first-child th:last-child {
+    border-bottom-right-radius: 10px;
+  }
+
+  .ant-table-thead > tr > th {
+    border-bottom: 4px solid var(--bggreycolor);
+    background: var(--tableheader);
+    font-weight: 800;
+
+    th:nth-child(1) {
+      border-bottom-left-radius: 10px;
+    }
+    th:last-child {
+      border-bottom-right-radius: 10px;
+    }
+
+   
+  }
+
+
+}
+
+  
+
+  @media (max-width: 1000px) {
+    .tmhead {
+      margin: 0 0 15px 0;
+
+      .searchright {
+        float: none;
+        margin-top: 10px;
+        width: 200px;
+      }
+    }
+  }
+
+  .ant-table-tbody > tr.ant-table-row:hover > td, .ant-table-tbody > tr > td.ant-table-cell-row-hover{
+    background: inherit;
+  }
+}
+
+td.bggreen {
+  background: #00B050;
+  text-align: center;
+  color: #fff;
+}
+td.bggrey{
+background: #808080;
+color: #fff;
+}
+

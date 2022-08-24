@@ -1,0 +1,203 @@
+.admin-components-wrapper {
+  .dflex {
+    display: flex;
+  }
+
+  .ant-picker{
+    border-radius: 5px;
+  }
+  
+  .ant-picker-range {
+    position: relative;
+    display: inline-flex;
+   border-radius:5px;
+
+  }
+  
+  .pageheaderlast {
+    select {
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      margin-left: 8px;
+      width: 200px;
+      border-radius: 5px;
+    }
+  }
+
+  .weekdayrow {
+    margin: 15px 0 35px 0;
+    padding: 0 0 0 60px;
+    span {
+      display: inline-block;
+      height: 10px;
+      border-radius: 15px;
+      width: 100%;
+    }
+    .sunclr {
+      background: var(--Sun);
+    }
+    .monclr {
+      background: var(--Mon);
+    }
+    .turclr {
+      background: var(--Thu);
+    }
+    .wedclr {
+      background: var(--Wed);
+    }
+    .thuclr {
+      background: var(--Thu);
+    }
+    .friclr {
+      background: var(--Fri);
+    }
+    .satclr {
+      background: var(--Sat);
+    }
+  }
+
+  .orange {
+    background-color: var(--orange);
+  }
+  .orange-text {
+    color: var(--orange);
+  }
+  .darkgreen {
+    background-color: var(--darkgreen);
+  }
+  .darkgreen-text {
+    color: var(--darkgreen);
+  }
+  .merun {
+    background-color: var(--merun);
+  }
+  .merun-text {
+    color: var(--merun);
+  }
+  .yellowgreen {
+    background-color: var(--yellowgreen);
+  }
+  .yellowgreen-text {
+    color: var(--yellowgreen);
+  }
+  .blue {
+    background-color: var(--blue);
+  }
+  .blue-text {
+    color: var(--blue);
+  }
+  .orangedark {
+    background-color: var(--orangedark);
+  }
+  .orangedark-text {
+    color: var(--orangedark);
+  }
+  .purple {
+    background-color: var(--purple);
+  }
+  .purple-text {
+    color: var(--purple);
+  }
+  .darkblue {
+    background-color: var(--darkblue);
+  }
+  .darkblue-text {
+    color: var(--darkblue);
+  }
+  .bluelight {
+    background-color: var(--bluelight);
+  }
+  .bluelight-text {
+    color: var(--bluelight);
+  }
+  .skypbluedark {
+    background-color: var(--skypbluedark);
+  }
+  .skypbluedark-text {
+    color: var(--skypbluedark);
+  }
+  .greenblue {
+    background-color: var(--greenblue);
+  }
+  .greenblue-text {
+    color: var(--greenblue);
+  }
+  .darkred {
+    background-color: var(--darkred);
+  }
+  .darkred-text {
+    color: var(--darkred);
+  }
+  .dasboardheader {
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-right: 18px;
+    h3 {
+      font-weight: 800;
+    }
+    button {
+      background: var(--whitetext);
+      border: none;
+      border-radius: 8px;
+      padding: 3px 8px;
+    }
+  }
+  .dashboard-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .orange {
+    background-color: var(--orange);
+  }
+  .orange-text {
+    color: var(--orange);
+  }
+  .darkgreen {
+    background-color: var(--darkgreen);
+  }
+  .darkgreen-text {
+    color: var(--darkgreen);
+  }
+  .merun {
+    background-color: var(--merun);
+  }
+  .merun-text {
+    color: var(--merun);
+  }
+  .yellowgreen {
+    background-color: var(--yellowgreen);
+  }
+  .yellowgreen-text {
+    color: var(--yellowgreen);
+  }
+  
+  .dashlabel {
+    width: 100%;
+    padding: 0 20px 20px 0;
+    .dhead {
+      color: var(--whitetext);
+      padding: 10px 15px;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .dlebcontent {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--whitetext);
+      padding: 16px;
+      border-radius: 0px 0px 8px 8px;
+      .dcount {
+        font-weight: 800;
+        font-size: 35px;
+      }
+
+      .dicon {
+        img {
+          height: 40px;
+        }
+      }
+    }
+  }
+}

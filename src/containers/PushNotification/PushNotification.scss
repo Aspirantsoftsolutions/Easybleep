@@ -1,0 +1,123 @@
+.pushnotification-components-wrapper {
+  .pageheader {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px 25px 0px;
+    align-items: center;
+    h3 {
+      font-weight: 800;
+      margin: 0;
+    }
+    .addmore {
+      img {
+        height: 30px;
+      }
+    }
+
+    .pageheaderlast {
+      display: flex;
+      .searchblock {
+        margin: 0 20px 0 0;
+        input {
+          border-radius: 5px;
+          width: 250px;
+        }
+      }
+    }
+  }
+  .ant-table-tbody {
+    .ant-table table {
+      width: 100%;
+      text-align: left;
+      border-radius: 2px 2px 0 0;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: #f0f2f5;
+    }
+    tr {
+      td {
+        border-bottom: 4px solid var(--bggreycolor);
+
+        .iconbutton {
+          border: none;
+          background: none;
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
+        .actionicon {
+          width: 110px;
+          img {
+            height: 18px;
+            margin-left: 10px;
+          }
+        }
+      }
+      td:nth-child(1) {
+        border-bottom-left-radius: 10px;
+      }
+      td:last-child {
+        border-bottom-right-radius: 10px;
+      }
+    }
+    tr:nth-child(even) {
+      background-color: var(--lightred);
+      box-shadow: 0 1px 3px #ccc;
+      position: relative;
+      border-radius: 10px;
+      z-index: 5;
+      top: 1px;
+    }
+    tr:nth-child(odd) {
+      background-color: var(--whitetext);
+      box-shadow: 0 1px 3px #ccc;
+      position: relative;
+      border-radius: 10px;
+      z-index: 4;
+      top: 1px;
+    }
+  }
+  .ant-table-content {
+    background: #f0f2f5;
+  }
+
+  .ant-table-container table > thead > tr:first-child th:first-child {
+    border-bottom-left-radius: 10px;
+  }
+  .ant-table-container table > thead > tr:first-child th:last-child {
+    border-bottom-right-radius: 10px;
+  }
+
+  .ant-table-thead > tr > th {
+    border-bottom: 4px solid var(--bggreycolor);
+    background: var(--tableheader);
+    font-weight: 800;
+
+    th:nth-child(1) {
+      border-bottom-left-radius: 10px;
+    }
+    th:last-child {
+      border-bottom-right-radius: 10px;
+    }
+  }
+  @media (max-width: 700px) {
+    .pageheader {
+      display: flex;
+      align-items: baseline;
+      flex-direction: column;
+      h3{
+        margin-bottom: 15px;
+      }
+      .pageheaderlast {
+        .searchblock {
+          input {
+            border-radius: 5px;
+            width: 230px;
+            margin: 0 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}

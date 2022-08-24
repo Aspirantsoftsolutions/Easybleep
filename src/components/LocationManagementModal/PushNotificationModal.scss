@@ -1,0 +1,98 @@
+.locatonmodel {
+  .ant-modal-header{
+    background: var(--darkred);
+    .ant-modal-title{
+      color: var(--whitetext);
+      font-weight: 800;
+      text-align: center;
+    }
+  } 
+  
+  .ant-modal-close {      
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 40px;     
+      position: absolute;
+  
+    .ant-modal-close-x {   
+      background: var(--darkred);    
+      border-radius: 100px 100px 0 0;
+      top: -45px;
+      position: relative;
+      color: var(--whitetext);
+      .anticon{
+        border: 2px solid var(--whitetext);
+        padding: 5px;
+        border-radius: 100px;
+        font-weight: 800;  
+      }
+    }
+  }
+
+  .ant-modal-footer{
+    padding: 0;
+    display: flex;
+    .ant-btn-primary {
+      background: var(--submitbtn);
+      border: none;
+      width: 50%;
+      border-radius: 0;
+      height: 50px;
+      font-weight: 700;
+    }
+    .ant-btn + .ant-btn:not(.ant-dropdown-trigger) {
+      color: var(--submitbtn);
+      background: var(--cancelbtn);      
+      border-radius: 0;
+      width: 50%;
+      margin: 0;
+      height: 50px;
+      font-weight: 700;
+     
+    }
+  }
+  .formsp{
+    margin-bottom: 15px;
+    input{
+        height: 40px;
+    }
+    .labletext{
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    select{
+        height:48px;
+       
+    }
+  }
+
+
+  /**Form**/
+  .userforms {
+    font-weight: 600;
+    color: var(--formlable);
+    .spcol {
+      padding: 10px 5px;
+    }
+    .ant-select {
+      width: 100%;
+      border: none;
+    }
+    .ant-input {
+      border: none;
+      border-bottom: 1px solid #d9d9d9;
+      border-radius: 0;
+      padding: 8px 0;
+    }
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      border: none;
+      border-bottom: 1px solid #d9d9d9;
+      border-radius: 0;
+      background: var(--cancelbtn);
+    }
+  }
+  /**Form**/
+
+
+}

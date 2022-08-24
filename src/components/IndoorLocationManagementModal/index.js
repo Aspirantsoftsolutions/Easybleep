@@ -1,0 +1,3 @@
+import IndoorLocationManagementModal from "./IndoorLocationManagementModal";
+
+export default IndoorLocationManagementModal

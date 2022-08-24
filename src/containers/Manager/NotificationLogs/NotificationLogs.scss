@@ -1,0 +1,195 @@
+.notificationtable-components-wrapper {
+  .ant-table-thead > tr > th {
+    background: var(--tableheader);
+    font-weight: 800;
+  }
+
+  .ant-btn {
+    font-weight: 600;
+    background: var(--darkred);
+    color: var(--whitetext);
+    border-radius: 100px;
+    border: none;
+    text-transform: capitalize;
+  }
+  .ant-tag {
+    background: var(--darkred);
+    color: var(--whitetext);
+    border-radius: 100px;
+    border: none;
+    padding: 3px 18px;
+  }
+}
+
+.notificationlog-components-wrapper {
+  .pageheaderlast {
+    margin-bottom: 15px;
+    text-align: right;
+    label {
+      margin: 0 10px;
+    }
+    select {
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      margin-left: 8px;
+      width: 200px;
+      border-radius: 5px;
+    }
+  }
+  .notfiheader {
+    text-align: left;
+    padding: 10px;
+    color: var(--darkblack);
+    font-weight: 800;
+    margin: 0 0 15px 0;
+  }
+
+  .tboxblock {
+    margin: 15px 0 0 0;
+    .frow {
+      display: flex;
+      justify-content: space-between;
+
+      .colblck {
+        width: 32%;
+        padding: 15px;
+        background: var(--whitetext);
+        margin: 0 10px 10px 0;
+        min-height: 200px;
+
+        .Statusblock {
+          background: var(--tableheader);
+          color: var(--whitetext);
+          padding: 3px 25px;
+          border-radius: 100px;
+          display: inline-block;
+        }
+        .notul {
+          padding: 0;
+          margin: 0;
+          li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: left;
+            border-bottom: 1px solid var(--tableheader);
+            padding: 8px 0;
+          }
+        }
+
+        .nothead {
+          font-weight: 800;
+          text-align: left;
+          padding: 0 0 10px 0;
+          margin-bottom: 10px;
+          border-bottom: 1px solid var(--tableheader);
+        }
+      }
+    }
+  }
+
+  .ant-table-tbody {
+    .ant-table table {
+      width: 100%;
+      text-align: left;
+      border-radius: 2px 2px 0 0;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: #f0f2f5;
+    }
+    tr {
+      td {
+        border-bottom: 4px solid var(--bggreycolor);
+
+        .iconbutton {
+          border: none;
+          background: none;
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
+        .actionicon {
+          width: 110px;
+          img {
+            height: 18px;
+            margin-left: 10px;
+          }
+        }
+      }
+      td:nth-child(1) {
+        border-bottom-left-radius: 10px;
+      }
+      td:last-child {
+        border-bottom-right-radius: 10px;
+      }
+    }
+    tr:nth-child(even) {
+      background-color: var(--lightred);
+      box-shadow: 0 1px 3px #ccc;
+      position: relative;
+      border-radius: 10px;
+      z-index: 5;
+      top: 1px;
+    }
+    tr:nth-child(odd) {
+      background-color: var(--whitetext);
+      box-shadow: 0 1px 3px #ccc;
+      position: relative;
+      border-radius: 10px;
+      z-index: 4;
+      top: 1px;
+    }
+  }
+  .ant-table-content {
+    background: #f0f2f5;
+  }
+
+  .ant-table-container table > thead > tr:first-child th:first-child {
+    border-bottom-left-radius: 10px;
+  }
+  .ant-table-container table > thead > tr:first-child th:last-child {
+    border-bottom-right-radius: 10px;
+  }
+
+  .ant-table-thead > tr > th {
+    border-bottom: 4px solid var(--bggreycolor);
+    background: var(--tableheader);
+    font-weight: 800;
+
+    th:nth-child(1) {
+      border-bottom-left-radius: 10px;
+    }
+    th:last-child {
+      border-bottom-right-radius: 10px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .pageheaderlast {
+      margin-bottom: 15px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      label {
+        margin: 10px 0;
+      }
+      select {
+        margin-left: 0;
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
+
+    .tboxblock {
+      .frow {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        .colblck {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,190 @@
+.login-components-wrapper {
+  font-family: mulish;
+  background: url(../../assets/img/bgnew.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+
+  input,
+  label {
+    font-family: mulish;
+  }
+  .logbg1{
+    position: absolute;
+  }
+  .logbg2{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+
+  .login-components {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    // background: #fff;
+    // background-image: url(../../assets/img/logbg.jpg);
+    background-repeat: no-repeat;
+    // box-shadow: 0px 0px 11px 3px #666;
+    padding: 15px;
+    position: relative;
+    top:8vmin;
+    background-size: contain;
+    float: right;
+
+
+   
+
+
+    .login-left {
+      width: 50%;
+      padding: 22% 8% 20% 2%;
+      overflow: hidden;
+      h1 {
+        font-weight: 800;
+        margin: 0;
+        font-size: 36px;
+      }
+      h3 {
+        font-weight: 800;
+        margin: 0;
+        font-size: 20px;
+      }
+    }
+    .login-right {
+      width: 50%;
+      padding:10% 10% 0 10%;
+      .useicon {
+        position: absolute;
+        right: 0;
+        margin: 14px 0 0 10px;
+        font-size: 15px;
+        color: var(--darkred);
+      }
+      .logoblk {
+        text-align: center;
+        margin-bottom: 40px;
+        img{
+          width:220px;
+        }
+      }
+      .ant-input-affix-wrapper {
+        border: none;
+        padding: 0;
+      }
+    
+      .ant-input-suffix {
+        margin-left: 4px;
+        position: absolute;
+        right: 0;
+        margin: 12px 10px 0 0;
+      }
+
+      label {
+        margin: 15px 0 10px 0;
+        display: inline-block;
+      }
+      input {
+        height: 40px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        font-size: 16px;
+        padding: 4px 11px 4px 0;
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .anticon svg {
+        display: none;
+      }
+      .fitem {
+        position: relative;
+        
+
+        .useicon {
+          position: absolute;
+          margin: 12px 10px 0 0;
+          width: 15px;
+          z-index: 999;
+          top: 0;
+          right: 0;
+        }
+
+        .passicon {
+          position: absolute;
+          margin: 12px 10px 0 0;
+          width: 15px;
+          z-index: 999;
+          top: 0;
+          right: 0;
+        }
+      }
+
+      .footer-login {
+        display: flex;
+        justify-content: space-between;
+        .btn-forgot {
+          background: none;
+          color: #666;
+          border-radius: 100px;
+          padding: 0 0 0 0;
+          border: none;
+          box-shadow: none;
+          font-size: 14px;
+        }
+        .btn-login {
+          background:var(--darkred);
+          color: #fff;
+          border-radius: 100px;
+          padding: 2px 30px;
+          border: none;
+        }
+      }
+
+      .ant-form-item-explain-error {
+        color: red;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+
+    overflow: auto;
+    .login-components {
+      flex-direction: column;
+      background: #fff;
+
+      .login-left {
+        width: 100%;
+        padding: 12% 1%;
+        text-align: center;
+        h1 {
+          font-size: 24px;
+        }
+        h3 {
+          font-size: 16px;
+        }
+      }
+      .login-right {
+        width: 100%;
+        padding: 0;
+
+        label {
+          margin: 0;
+          display: inline-block;
+        }
+
+        .footer-login {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
